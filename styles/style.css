@@ -15,3 +15,43 @@ body {
 }
 
 /* Add your css  */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.display {
+    width: 261px;
+    padding: 0.8rem;
+    border: none;
+    outline: none;
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+    text-align: end;
+    font-size: 1.2rem;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.27rem;
+    padding: 1rem;
+    background: linear-gradient(90deg, #00c9ff 0%, #92fe9d 100%);
+}
+
+.buttons button {
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #00000099;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 0 20px #d9e7ff;
+}
+
+.buttons button:active {
+    animation: animate__pulse 0.3s ease-in-out 0.1s;
+}
